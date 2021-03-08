@@ -68,10 +68,9 @@ export class PowerKanban implements ComponentFramework.StandardControl<IInputs, 
 
 		const props: AppProps = {
 			appId: search["appid"] ?? search["app"] ?? "d365default",
-			primaryEntityLogicalName: this._context.parameters.primaryDataSet.getTargetEntityType(),
 			configId: this.config ? this.config.oss_powerkanbanconfigid : null,
 			primaryEntityId: (context.mode as any).contextInfo.entityId,
-			primaryDataIds: this._context.parameters.primaryDataSet.sortedRecordIds
+			primaryDataSet: this._context.parameters.primaryDataSet
 		};
 
 		ReactDOM.render(

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest>
-  <control namespace="oss" constructor="PowerKanban" version="0.9.170" display-name-key="PowerKanban" description-key="Advanced Kanban for D365 datasets" control-type="standard">
+  <control namespace="oss" constructor="PowerKanban" version="0.9.178" display-name-key="PowerKanban" description-key="Advanced Kanban for D365 datasets" control-type="standard">
     <!-- dataset node represents a set of entity records on CDS; allow more than one datasets -->
     <data-set name="primaryDataSet" display-name-key="Primary Data Set" cds-data-set-options="displayCommandBar:true;displayViewSelector:false;displayQuickFind:false">
     </data-set>

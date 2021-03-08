@@ -681,16 +681,17 @@ export const Board = () => {
         items={navItems.filter(i => !!i)}
       />
       <DndContainer>
-        { displayState === "advanced" &&
-          <div id="advancedContainer" style={{ display: "flex", flexDirection: "column", overflow: "auto" }}>
-            { advancedData }
-          </div>
-        }
-        { displayState === "simple" && 
-          <div id="flexContainer" style={{ display: "flex", flexDirection: "row", overflow: "auto", flex: "1" }}>
+        <div id="allInAll" style={{ display: "flex", flexDirection: "column", overflow: "auto" }}>
+          { displayState === "advanced" &&
+            <div id="advancedContainer" style={{ display: "flex", flexDirection: "column" }}>
+              { advancedData }
+            </div>
+          }
+          
+          <div id="flexContainer" style={{ display: "flex", flexDirection: "row", flex: "1" }}>
             { simpleData }
           </div>
-        }
+        </div>
       </DndContainer>
     </div>
   );
